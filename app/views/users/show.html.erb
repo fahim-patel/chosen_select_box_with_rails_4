@@ -1,0 +1,5 @@
+<select data-placeholder="Choose skills..."  multiple class="chosen-select_skills_users" name="skills" >
+  <% Skill.all.each do |skill| %>
+    <option value="<%= skill.id%>"><%= skill.name%></option>
+  <% end %> 
+</select>
